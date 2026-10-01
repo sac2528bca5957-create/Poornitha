@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>EduGenie Automated Pytest Suite Execution</title>
+    <style>
+        body { background-color: #0f172a; color: #f8fafc; font-family: 'Courier New', monospace; padding: 24px; margin: 0; }
+        .header { background: #1e293b; padding: 16px 20px; border-radius: 8px; border: 1px solid #334155; margin-bottom: 20px; }
+        .header h1 { margin: 0 0 6px 0; font-size: 20px; color: #38bdf8; }
+        .stats-row { display: flex; gap: 20px; margin-top: 10px; font-size: 14px; }
+        .stat-badge { padding: 4px 10px; border-radius: 6px; font-weight: bold; }
+        .stat-pass { background: #064e3b; color: #34d399; border: 1px solid #059669; }
+        .stat-cov { background: #1e3a8a; color: #60a5fa; border: 1px solid #2563eb; }
+        .terminal { background: #020617; border: 1px solid #1e293b; border-radius: 8px; padding: 20px; font-size: 13px; line-height: 1.5; overflow-x: auto; white-space: pre-wrap; }
+        .green { color: #4ade80; }
+        .cyan { color: #38bdf8; }
+        .yellow { color: #facc15; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🧪 EduGenie Automated Test Suite Execution</h1>
+        <div class="stats-row">
+            <span class="stat-badge stat-pass">✓ 37 Passed (100% Pass Rate)</span>
+            <span class="stat-badge stat-cov">📊 80% Code Coverage</span>
+            <span class="stat-badge stat-pass">⚡ Execution Time: 0.70s</span>
+        </div>
+    </div>
+    <div class="terminal"><span class="cyan">$ pytest -v --cov=. tests/</span>
+
+============================= test session starts ==============================
+platform linux -- Python 3.13.14, pytest-9.0.3, pluggy-1.6.0 -- /usr/local/bin/python3.13
+cachedir: .pytest_cache
+rootdir: /home/user/EduGenie
+plugins: anyio-4.14.2, cov-7.1.0
+collecting ... collected 37 items
+
+tests/test_api.py::test_health_check PASSED                              [  2%]
+tests/test_api.py::test_root_html_renders PASSED                         [  5%]
+tests/test_api.py::test_qa_scenario_largest_ocean PASSED                 [  8%]
+tests/test_api.py::test_qa_empty_query PASSED                            [ 10%]
+tests/test_api.py::test_qa_missing_param PASSED                          [ 13%]
+tests/test_api.py::test_explain_quantum_computing PASSED                 [ 16%]
+tests/test_api.py::test_explain_binary_search_local_backend PASSED       [ 18%]
+tests/test_api.py::test_explain_empty_topic PASSED                       [ 21%]
+tests/test_api.py::test_summarize_industrial_revolution PASSED           [ 24%]
+tests/test_api.py::test_summarize_short_text PASSED                      [ 27%]
+tests/test_api.py::test_quiz_pythagoras_theorem PASSED                   [ 29%]
+tests/test_api.py::test_quiz_with_text_field PASSED                      [ 32%]
+tests/test_api.py::test_quiz_empty_input PASSED                          [ 35%]
+tests/test_api.py::test_learning_path_sql PASSED                         [ 37%]
+tests/test_api.py::test_learning_path_empty_topic PASSED                 [ 40%]
+tests/test_edge_cases.py::test_qna_ai_failure_fallback PASSED            [ 43%]
+tests/test_edge_cases.py::test_quiz_ai_failure_invalid_json_fallback PASSED [ 45%]
+tests/test_edge_cases.py::test_explanation_ai_failure_fallback PASSED    [ 48%]
+tests/test_edge_cases.py::test_summarize_ai_failure_fallback PASSED      [ 51%]
+tests/test_edge_cases.py::test_very_long_input_handling PASSED           [ 54%]
+tests/test_edge_cases.py::test_special_characters_input PASSED           [ 56%]
+tests/test_modules.py::test_qna_module_direct PASSED                     [ 59%]
+tests/test_modules.py::test_qna_module_empty_raises PASSED               [ 62%]
+tests/test_modules.py::test_explanation_module_direct_gemini PASSED      [ 64%]
+tests/test_modules.py::test_explanation_module_direct_local PASSED       [ 67%]
+tests/test_modules.py::test_explanation_module_empty_raises PASSED       [ 70%]
+tests/test_modules.py::test_quiz_module_direct PASSED                    [ 72%]
+tests/test_modules.py::test_quiz_module_empty_raises PASSED              [ 75%]
+tests/test_modules.py::test_quiz_schema_validator_valid PASSED           [ 78%]
+tests/test_modules.py::test_quiz_schema_validator_invalid_count PASSED   [ 81%]
+tests/test_modules.py::test_quiz_schema_validator_invalid_options_count PASSED [ 83%]
+tests/test_modules.py::test_quiz_schema_validator_answer_mismatch PASSED [ 86%]
+tests/test_modules.py::test_quiz_clean_json_block PASSED                 [ 89%]
+tests/test_modules.py::test_summary_module_direct PASSED                 [ 91%]
+tests/test_modules.py::test_summary_module_empty_raises PASSED           [ 94%]
+tests/test_modules.py::test_learning_path_module_direct PASSED           [ 97%]
+tests/test_modules.py::test_learning_path_module_empty_raises PASSED     [100%]
+
+=============================== warnings summary ===============================
+../../../usr/local/lib/python3.13/site-packages/fastapi/testclient.py:1
+  /usr/local/lib/python3.13/site-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+    from starlette.testclient import TestClient as TestClient  # noqa
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+======================== 37 passed, 1 warning in 0.33s =========================
+
+
+<span class="cyan">$ pytest --cov=. --cov-report=term-missing tests/</span>
+
+============================= test session starts ==============================
+platform linux -- Python 3.13.14, pytest-9.0.3, pluggy-1.6.0
+rootdir: /home/user/EduGenie
+plugins: anyio-4.14.2, cov-7.1.0
+collected 37 items
+
+tests/test_api.py ...............                                        [ 40%]
+tests/test_edge_cases.py ......                                          [ 56%]
+tests/test_modules.py ................                                   [100%]
+
+=============================== warnings summary ===============================
+../../../usr/local/lib/python3.13/site-packages/fastapi/testclient.py:1
+  /usr/local/lib/python3.13/site-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+    from starlette.testclient import TestClient as TestClient  # noqa
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================ tests coverage ================================
+_______________ coverage: platform linux, python 3.13.14-final-0 _______________
+
+Name                       Stmts   Miss  Cover   Missing
+--------------------------------------------------------
+config.py                     41     21    49%   29, 40-62
+demo_generator.py             51     13    75%   27, 33, 38, 84-97, 134, 178, 244-245, 308-325
+explanation_module.py         59     21    64%   21, 25-29, 50-62, 89-91, 116-122
+learning_path.py              31     18    42%   31-73
+main.py                      113     27    76%   74, 84, 117, 124-126, 137-141, 158-162, 173-177, 187, 194-196, 200-201
+qna.py                        31      8    74%   34-36, 57-63
+quiz_module.py                62     13    79%   38, 40, 44, 46, 74-76, 110-112, 117-125
+summary_module.py             31      8    74%   34-36, 62-68
+tests/test_api.py             90      0   100%
+tests/test_edge_cases.py      66      0   100%
+tests/test_modules.py         72      0   100%
+--------------------------------------------------------
+TOTAL                        647    129    80%
+======================== 37 passed, 1 warning in 0.57s =========================
+</div>
+</body>
+</html>

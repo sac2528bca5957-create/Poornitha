@@ -1,0 +1,7 @@
+2026-09-24 13:55:22,359 [INFO] EduGenie.Config: ⚡ Running in DEMO MODE (Offline Deterministic AI Generators active)
+INFO:     Started server process [3347]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:54320 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54322 - "GET / HTTP/1.1" 200 OK

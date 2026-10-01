@@ -1,0 +1,15 @@
+{
+  "01_dashboard_initial.png": "EduGenie web dashboard landing state with demo mode badge and five educational feature cards.",
+  "02_qa_largest_ocean.png": "Smart Q&A response for 'Which is the largest ocean?' providing concise factual answer regarding the Pacific Ocean.",
+  "03_explain_quantum_computing.png": "Concept Explainer simplifying Quantum Computing using Qubit analogies and school-level definitions via Gemini backend.",
+  "04_explain_binary_search_local.png": "Concept Explainer for 'binary search algorithm' with telephone directory analogy and O(log n) analysis via Local LaMini-Flan-T5 option.",
+  "05_summarize_industrial_revolution.png": "Text Summarizer condensing Industrial Revolution textbook passage into bulleted study notes.",
+  "06_quiz_pythagoras_generated.png": "Interactive Quiz Generator displaying 3 structured MCQs on Pythagoras theorem with 4 options each.",
+  "07_quiz_grading_evaluation.png": "Quiz grading evaluation showing 2 Correct (green) and 1 Incorrect (red) with score banner 2/3 (66.7%).",
+  "08_learning_path_sql.png": "Personalized Learning Roadmap for SQL showing 3 structured stages (Beginner to Advanced) with time estimates.",
+  "09_validation_error_state.png": "Input validation and error handling displaying helpful user error notification on empty submission.",
+  "10_fastapi_swagger_docs.png": "FastAPI interactive OpenAPI Swagger documentation for all 5 EduGenie endpoints and /health.",
+  "11_mobile_dashboard.png": "Mobile responsive view (390x844) showing EduGenie responsive header and navigation.",
+  "12_mobile_quiz_evaluated.png": "Mobile view (390x844) of interactive quiz assessment with instant grading and score tracking.",
+  "13_mobile_learning_path.png": "Mobile view (390x844) displaying personalized learning roadmap for SQL."
+}
